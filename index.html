@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/swiper.min.css">
+    <link rel="stylesheet" href="styles/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a class="header__logo" href="#">
+                <img src="images/logo.png" alt="Logo">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="join-block">
+            <h1 style="display: none;">Main block</h1>
+            <div class="container">
+                <article class="join-block__form">
+                    <h2 style="display: none;">Main slider</h2>
+                    <div class="swiper join-block__slider">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                              <img src="images/slide_1.png" alt="Slide">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/slide_2.png" alt="Slide">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/slide_3.png" alt="Slide">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="images/slide_4.png" alt="Slide">
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                    <form class="join-block__input-form">
+                        <fieldset class="input-form__block">
+                            <legend class="input-form__titel">Join us now. It's FREE</legend>
+
+                            <div class="input-form__union">
+                                <span>I am</span>
+                                <div class="input-form__user">
+                                    <ul class="user__list">
+                                        <li class="user__item user__item_active"></li>
+                                        <li class="user__item"></li>
+                                    </ul>
+                                    <span class="user__text">looking for</span>
+                                    <ul class="user__list">
+                                        <li class="user__item"></li>
+                                        <li class="user__item user__item_active"></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="input-form__union">
+                                <label for="label-name">Name</label>
+                                <input id="label-name" type="text" required>
+
+                                <span class="icon__close"></span>
+                                <div class="error__window">
+                                    <span class="error__text">Enter your name</span>
+                                </div>
+                            </div>
+                            <div class="input-form__union">
+                                <span>Age</span>
+                                <ul class="select-union">
+                                    <li class="select">
+                                        <input class="select__input" type="hidden" name="sorting">
+                                        <div class="select__head">12</div>
+                                        <div class="select__popup" style="display: none;">
+                                            <ul class="select__list">
+                                                <li class="select__item">1</li>
+                                                <li class="select__item">2</li>
+                                                <li class="select__item">3</li>
+                                                <li class="select__item">4</li>
+                                                <li class="select__item">5</li>
+                                                <li class="select__item">6</li>
+                                                <li class="select__item">7</li>
+                                                <li class="select__item">8</li>
+                                                <li class="select__item">9</li>
+                                                <li class="select__item">10</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="select">
+                                        <input class="select__input" type="hidden" name="sorting">
+                                        <div class="select__head">oktober</div>
+                                        <div class="select__popup" style="display: none;">
+                                            <ul class="select__list">
+                                                <li class="select__item">november</li>
+                                                <li class="select__item">december</li>
+                                                <li class="select__item">june</li>
+                                                <li class="select__item">march</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="select">
+                                        <input class="select__input" type="hidden" name="sorting">
+                                        <div class="select__head">1984</div>
+                                        <div class="select__popup" style="display: none;">
+                                            <ul class="select__list">
+                                                <li class="select__item">1970</li>
+                                                <li class="select__item">1994</li>
+                                                <li class="select__item">1985</li>
+                                                <li class="select__item">1963</li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <span class="icon__check"></span>
+                            </div>
+                            <div class="input-form__union">
+                                <span>City</span>
+                                <div class="select">
+                                    <input class="select__input" type="hidden" name="sorting">
+                                    <div class="select__head">London</div>
+                                    <div class="select__popup" style="display: none;">
+                                        <ul class="select__list">
+                                            <li class="select__item">Paris</li>
+                                            <li class="select__item">Dnipro</li>
+                                            <li class="select__item">Rome</li>
+                                            <li class="select__item">Venice</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-form__checking">
+                                <ul class="subscript__list">
+                                    <li class="subscript__item">
+                                        <input class="checks" type="checkbox" id="subscript_1" name="subscript" checked>
+                                        <label for="subscript_1">I’m cool</label>
+                                    </li>
+                                    <li class="subscript__item">
+                                        <input class="checks" type="checkbox" id="subscript_2" name="subscript">
+                                        <label for="subscript_2">Life’s good</label>
+                                    </li>
+                                </ul>
+                                <ul class="radios__list">
+                                    <li class="radios__item">
+                                        <input class="radios" type="radio" id="radios_1" name="radios">
+                                        <label for="radios_1">Tee</label>
+                                    </li>
+                                    <li class="radios__item">
+                                        <input class="radios" type="radio" id="radios_2" name="radios" checked>
+                                        <label for="radios_2">Beer</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                            <button class="input-form__button" type="submit">Start Now</button>
+                        </fieldset>
+                    </form>
+                </article>
+            </div>
+        </section>
+
+        <section class="info-block">
+            <h2 style="display: none;">Main info block</h2>
+            <div class="container">
+                <div class="info-block__entry">
+                    <article class="info-block__left">
+                        <h2 class="info-block__titel">Code this block</h2>
+                        <img class="info-block__image" src="images/user.png" alt="User-photo">
+                        <p class="info-block__text">
+                            This text should be changeable. Lorem ipsum text here. Offers 
+                            great opportunities to everyone looking to meet locals, 
+                            find romantic dates and make new friends. Our dating site gives 
+                            you hours of dating fun, together with seemingly endless possibilities 
+                            to meet new single people from your area, make friends, go on a date and 
+                            enjoy good company. With thousands of local personals, will make your life 
+                            a whole lot busier with all that dating. This is a great place to find true 
+                            friends or devoted partners for long-term relationships or marriage. We
+                        </p>
+                    </article>
+                    <article class="info-block__right">
+                        <h2>Users List</h2>
+                        <article class="info-block__combine">
+                            <h2 style="display: none;">Main info block</h2>
+                            <div class="swiper info-block__slider">
+                                <ul class="swiper-wrapper">
+                                  <li class="swiper-slide">
+                                      <img src="images/user_small.png" alt="Slide">
+                                  </li>
+                                  <li class="swiper-slide">
+                                    <img src="images/user_small.png" alt="Slide">
+                                  </li>
+                                  <li class="swiper-slide">
+                                    <img src="images/user_small.png" alt="Slide">
+                                  </li>
+                                  <li class="swiper-slide">
+                                    <img src="images/user_small.png" alt="Slide">
+                                  </li>
+                                  <li class="swiper-slide">
+                                    <img src="images/user_small.png" alt="Slide">
+                                  </li>
+                                  <li class="swiper-slide">
+                                    <img src="images/user_small.png" alt="Slide">
+                                  </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-navigation">
+                                <button class="swiper-button-prev"></button>
+                                <button class="swiper-button-next"></button>
+                            </div>
+                        </article>
+                        
+                        
+                        <aside class="info-block__tabs">
+                            <h2 style="display: none;">Main tabs</h2>
+                            <ul class="tabs-list" id="tabs">
+                                <li class="tabs-list__item" data-tab="1">Users List</li>
+                                <li class="tabs-list__item tabs-list__item_active" data-tab="2">Active list tab<span>38</span></li>
+                            </ul>
+                            <article class="text-info" data-text="1">
+                                <h2 style="display: none;">Main tabs list</h2>
+                                <p>
+                                    There is no secret to being successful in online dating - you just need to be yourself. Be active, comment on other members' profiles, send them mails, chat with them and rate their profiles. 
+                                    We provide a wide range of features allowing you to gather as many contacts as you can handle. It is better to rotate photographs of yourself regularly, update the details on your profile frequently, use the instant communicator facility, and log onto the site as much as possible, as well as at different times, to meet as many members as you can. It is most important to be honest, positive and patient in all your site activities.
+                                    In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 'For friends only' photos are visible only to those on your friends list.
+                                    You can also upload photos to your dating profile from your Facebook account.
+                                </p>
+                            </article>
+                            <article class="text-info text-info_active" data-text="2">
+                                <h2 style="display: none;">Main text-info</h2>
+                                <div class="text-info__grid">
+                                    <div class="loading__block">
+                                        <span class="loading__block_number">20%</span>
+                                        <span class="loading__block_color"></span>
+                                    </div>
+                                    <ol class="pagination__list">
+                                        <li class="pagination__item pagination__item_visited">
+                                            <a href="">Step 1</a>
+                                        </li>
+                                        <li class="pagination__item pagination__item_visited"> 
+                                            <a href="">Step 2</a>
+                                        </li>
+                                        <li class="pagination__item pagination__item_active">
+                                            <a href="">Step 3</a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a href="">Step 4</a>
+                                        </li>
+                                        <li class="pagination__item">
+                                            <a href="">Step 5</a>
+                                        </li>
+                                    </ol>
+                                    <div class="polzunok-container-5">
+                                        <div class="polzunok-5"></div>
+                                    </div>
+                                    <div class="pie animate no-round" style="--p:37;--c:#ffa352;">37%</div>
+                                    <div class="rating-area">
+                                        <input type="radio" id="star-5" name="rating" value="5">
+                                        <label for="star-5"></label>	
+                                        <input type="radio" id="star-4" name="rating" value="4">
+                                        <label for="star-4"></label> 
+                                        <input type="radio" id="star-3" name="rating" value="3">
+                                        <label for="star-3"></label>  
+                                        <input type="radio" id="star-2" name="rating" value="2">
+                                        <label for="star-2"></label>    
+                                        <input type="radio" id="star-1" name="rating" value="1">
+                                        <label for="star-1"></label>
+                                    </div>
+                                </div>
+                            </article>
+                        </aside>
+                    </article>
+                    <article class="info-block__bottom">
+                        <h2>How to succeed in online dating</h2>
+                        <div>
+                            <p>
+                                There is no secret to being successful in online dating - you just need to be yourself.
+                                Be active, comment on other members' profiles, send them mails, chat with them and 
+                                rate their profiles. We provide a wide range of features allowing you to gather as 
+                                many contacts as you can handle. It is better to rotate photographs of yourself 
+                                regularly, update the details on your profile frequently, use the instant communicator
+                                facility, and log onto the site as much as possible, as well as at different times, 
+                                to meet as many members as you can. It is most important to be honest, positive and 
+                                patient in all your site activities.
+                            </p>
+                            <aside>
+                                In the "My Account" area visit the section for photos entitled "My Photos" and select 
+                                the option "Click to upload photos". You will then be prompted to upload a photo from 
+                                your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 
+                                'For friends only' photos are visible only to those on your friends list.
+                            </aside>
+                            <p>
+                                You can also upload photos to your dating profile from your Facebook account.
+                            </p>
+                            <ol>
+                                <li>Access your dating life even when you are not browsing <a href="">Cupid.com</a>!
+                                <li>Search for new matches from your browser easily</li>
+                                <li>Read and write messages & chat with members live; receive Datecasts, 
+                                    winks and alerts when your friends are online or have updated their profile info
+                                </li>
+                                <li>
+                                    Read and write messages & chat with members live; receive Datecasts, winks and alerts when your friends
+                                </li>
+                            </ol>
+                            <blockquote>
+                                In the "My Account" area visit the section for photos entitled "My Photos" and select the option "Click to upload photos". You will then be prompted to upload a photo from your computer. Your 'Primary' photo is visible to everyone and should be a 'normal' photo. 
+                                'For friends only' photos are visible only to those on your friends list.
+                            </blockquote>
+                            <a href="">Click here to view more</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__block">
+                <a class="footer__logo" href="">
+                    <img src="images/logo_footer.png" alt="Logo">
+                </a>
+                <p class="footer__text">
+                    <span class="footer__text_small">VD</span>Web Coder Test  Task
+                    <span class="footer__text_big">2013</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery_3.6.0.js"></script>
+    <script src="js/jquery.ui.js"></script>
+    <script src="js/jquery.ui.touch.js"></script>
+    <script src="js/range.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

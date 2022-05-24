@@ -1,0 +1,219 @@
+@media (max-width: 1340px) {
+    .error {
+        &__window {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .join-block {
+        &__input-form {
+            padding: 20px;
+        }
+    }
+    .input-form {
+        &__block {
+            font-size: 16px;
+            grid-gap: 14px 20px;
+        }
+        &__titel {
+            font-size: 34px;
+            line-height: 35px;
+        }
+        &__union {
+            grid-gap: 15px;
+        }
+        &__button {
+            padding: 10px 30px;
+        }
+    }
+    .user {
+        &__text {
+            font-size: 14px;
+            &::before {
+                margin-right: 5px; 
+            }
+        }
+    }
+    .info-block {
+        &__right {
+            width: 45%;
+        }
+        &__left {
+            margin-right: 30px;
+        }
+    }
+    .pie {
+        --b: 12px;
+        width: 70px;
+    }
+    .icon{
+        &__check,
+        &__close {
+            right: -15px;
+            &::after {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    .join-block {
+        &__form {
+            flex-direction: column-reverse;
+        }
+        &__slider {
+            width: 100%;
+        }
+        &__input-form {
+            width: 100%;
+            border-left: none;
+        }
+    }
+    .input-form {
+        &__block {
+            font-size: 18px;
+        }
+        &__titel {
+            display: block;
+            text-align: center;
+        }
+    }
+    .user {
+        &__list {
+            width: 30%;
+        }
+        &__text {
+            font-size: 18px;
+        }
+    }
+    .info-block {
+        &__left {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+        &__image {
+            width: 120px;
+            height: 120px;
+        }
+        &__right {
+            width: 100%;
+        }
+        &__combine {
+            margin-bottom: 40px;
+        }
+        &__bottom {
+            > div {
+                column-count: 2;
+                column-gap: 50px;
+            }
+        }
+    }
+    .text-info {
+        &__grid {
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+    .pie {
+        --b: 20px;
+        width: 100px;
+    }
+}
+
+@media (max-width: 630px) {
+    .join-block {
+        margin-bottom: 20px;
+    }
+    .input-form {
+        &__block {
+            grid-gap: 10px 20px;
+        }
+        &__titel {
+            margin-bottom: 10px;
+            background-image: linear-gradient(to top, #ff800c  50%, rgba(255, 255, 255, 0.79) 100%);
+        }
+        &__union {
+            grid-template-columns: 1fr;
+            grid-gap: 5px;
+        }
+        &__checking {
+            grid-column: 1/-1;
+        }
+        &__button {
+            grid-column: 1/-1;
+            font-size: 40px;
+        }
+    }
+    .icon {
+        &__check,
+        &__close {
+            transform: translateY(0);
+        }
+    }
+    .select-union {
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .info-block {
+        margin-bottom: 20px;
+        &__bottom {
+            > div {
+                column-count: 1;
+                column-gap: 20px;
+            }
+        }
+    }
+    .footer {
+        &__block {
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            padding: 10px 0 18px;
+        }
+        &__logo {
+            justify-self: center;
+        }
+        &__text {
+            font-size: 18px;
+            justify-self: flex-start;
+            &_big {
+                font-size: 24px;
+                line-height: 24px;
+                text-align: start;
+            }
+        }
+    }
+}
+
+@media (max-width: 420px) {
+    .user {
+        &__list {
+            width: auto;
+        }
+        &__text {
+            font-size: 14px;
+            text-align: center;
+        }
+        &__item {
+            padding: 4px 14px;
+        }
+    }
+    .text-info {
+        &__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .pie,
+    .rating-area {
+        grid-column: 1/1;
+        justify-self: flex-start;
+    }
+    .rating-area {
+        &:not(:checked) {
+            > label {
+                font-size: 24px;
+            }
+        }
+    }
+}

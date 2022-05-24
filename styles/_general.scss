@@ -1,0 +1,210 @@
+/*Fonts (start)*/
+@font-face {
+    font-family: "SourceSansPro-Light"; 
+    src: url("../../fonts/SourceSansPro-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal; 
+  }
+/*Fonts (end)*/
+
+/*Fonts-icon (start)*/
+@font-face {
+    font-family: 'fontello';
+    src: url('../../fonts-icon/fontello.eot?16668368');
+    src: url('../../fonts-icon/fontello.eot?16668368#iefix') format('embedded-opentype'),
+         url('../../fonts-icon/fontello.woff2?16668368') format('woff2'),
+         url('../../fonts-icon/fontello.woff?16668368') format('woff'),
+         url('../../fonts-icon/fontello.ttf?16668368') format('truetype'),
+         url('../../fonts-icon/fontello.svg?16668368#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+/*Fonts-icon (end)*/
+  
+/*CSS reset (start)*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    padding: 0;
+    list-style-position: inside;
+}
+
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+fieldset {
+    margin: 0;
+}
+
+h2 {
+    font-size: 31px;
+    line-height: 35px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+fieldset,
+legend {
+    padding: 0;
+    border: none;
+}
+
+a[class] {
+    text-decoration: none;
+}
+
+body {
+    font-family: "SourceSansPro-Light";
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+input,
+button,
+textarea, 
+select {
+    font: inherit;
+}
+
+input[type="text"] {
+    padding: 5px 40px 5px 13px;
+    border: 1px solid rgba(0, 0, 0, 0.21);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.33);
+    background: linear-gradient(to top, #f5fafb 0%, #e6e6e6 100%);
+    border-radius: 30px;
+    outline: none;
+    width: 100%;
+    &:focus {
+        border: 1px solid rgba(209, 0, 0, 0.49);
+    }
+}
+
+button:not(.swiper-button-prev, .swiper-button-next) {
+    cursor: pointer;
+    background-image: linear-gradient(to top, #94c516 0%, #94c516 4%, #8eb92a 52%, #a8c732 92%, #b9ce44 100%);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.4);
+    border: 1px solid $green-color;
+    border-radius: 60px;
+}
+/*CSS reset (end)*/
+ 
+
+
+/*Style for checkbox (start)*/
+input.checks[type=checkbox] {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+input.checks[type=checkbox]+label {
+	display: inline-flex;
+	align-items: center;
+	flex-wrap: wrap;
+	user-select: none;
+	cursor: pointer;
+}
+input.checks[type=checkbox]+label::before {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.21);
+    background-image: linear-gradient(to top, #e6e6e6 0%, #f5fafb 100%);
+	border-radius: 3px;
+	margin-right: 8px;
+}
+input.checks[type=checkbox]:checked+label::before {
+	content: '\f0c8';
+    font-family: 'fontello';
+    font-size: 12px;
+	background-image: linear-gradient(to top, #ff891f 0%, #ffae02 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.checks[type=checkbox]:disabled+label::before {
+	background-color: #e9ecef;
+}
+/*Style for checkbox (end)*/
+
+/*Style for radio-button (начало)*/
+input.radios {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+input.radios+label {
+	display: inline-flex;
+	align-items: center;
+	user-select: none;
+	cursor: pointer;
+}
+input.radios+label::before {
+	content: '';
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	border: 1px solid rgba(0, 0, 0, 0.21);
+    background-image: linear-gradient(to top, #e6e6e6 0%, #f5fafb 100%);
+	border-radius: 50%;
+	margin-right: 8px;
+}
+input.radios:not(:disabled):not(:checked)+label:hover::before,
+input.checks:not(:disabled):not(:checked)+label:hover::before {
+	border-color: $orange-color_2;
+}
+input.radios:checked+label::before {
+    content: '\f111';
+	font-family: 'fontello';
+    font-size: 12px;
+	background-image: linear-gradient(to top, #ff891f 0%, #ffae02 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input.radios:disabled+label::before {
+	background-color: var(--color-grey);
+}
+/*Style for radio-button (end)*/
+
+.container {
+    max-width: 990px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
